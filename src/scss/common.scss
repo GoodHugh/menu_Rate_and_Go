@@ -1,1 +1,41 @@
 // Заголовки, общие БЄМ блоки и проче...
+%settings_font_info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 15px;
+    color: #ffffff;
+}
+%setings_font_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+._btn-red{
+    width: 100%;
+    background: #CB454D;
+    border-radius: 2px;
+    @extend %settings_font_info;
+    font-size: 14px;
+    padding: 17px 0;
+    position: relative;
+    transition: all 0.7s ease;
+    &::after{
+        content: '';
+        position: absolute;
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: all 0.7s ease;
+    }
+    &:hover{
+        transition: all 0.7s ease;
+        &::after{
+            width: 100%;
+        }
+        color: #CB454D;
+    }
+}

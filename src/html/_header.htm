@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__image-ibg">
-		<img data-src="@img/ibg_ratego_avto.jpg" alt="#">
+		<img src="../img/header/ibg_ratego_avto.jpg" alt="#">
 	</div>
 	<div class="header__container">
 		<div class="header__info info">
@@ -15,19 +15,20 @@
 					<svg class="info__list-items-icon">
 						<use xlink:href="../img/header/sprite.svg#email"></use>
 					</svg>
-					<a href="#" class="info__list-items-link">info@rate-and-go.com</a>
+					<a href="mailto:info@rate-and-go.com" class="info__list-items-link">info@rate-and-go.com</a>
 				</li>
 				<li class="info__list-items">
 					<svg class="info__list-items-icon">
 						<use xlink:href="../img/header/sprite.svg#geo"></use>
 					</svg>
-					<a href="#" class="info__list-items-link">ул. Десятинная 1/3, Киев</a>
+					<a href="https://yandex.ru/maps/-/CCU5NPA61D" class="info__list-items-link">ул. Десятинная 1/3,
+						Киев</a>
 				</li>
 				<li class="info__list-items">
-					<svg class="info__list-items-icon">
+					<svg class="info__list-items-icon-planet">
 						<use xlink:href="../img/header/sprite.svg#planet"></use>
 					</svg>
-					<button class="info__list-items-link">RU</button>
+					<button class="info__list-items-button">RU</button>
 					<ul class="drope-menu">
 						<li class="drope-menu__items"><a href="#" class="drope-menu__items-link">RU</a></li>
 						<li class="drope-menu__items"><a href="#" class="drope-menu__items-link">EN</a></li>
@@ -39,46 +40,46 @@
 		</div>
 		<div class="header__body">
 			<div class="header__body-logo logo">
-				<div class="logo-icon">
-					<img src="@img/icon_logo.png" alt="#">
-				</div>
-				<div class="logo-title">
-					<p class="logo-title-name">RateGO</p>
-					<p class="logo-title-paragraph">Logistics</p>
-				</div>
+				<a href="#" class="logo__bady">
+					<img class="logo__icon" src="../img/header/icon_logo.png" alt="#">
+					<div class="logo__title">
+						<p class="logo__title-name">RateGO</p>
+						<p class="logo__title-paragraph">Logistics</p>
+					</div>
+				</a>
 			</div>
 			<div class="header__menu menu">
-				<button type="button" class="menu__icon icon-menu"><span></span></button>
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Калькулятор</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-						<li class="menu__item"><a href="" class="menu__link">О компании</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-						<li class="menu__item">
-							<svg class="menu__item-icon">
-								<use xlink:href="../img/header/sprite.svg#user"></use>
-							</svg>
-							<a href="" class="menu__link">Войти</a>
-						</li>
+						<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Калькулятор</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 					</ul>
 				</nav>
+				<div class="menu__user">
+					<svg class="menu__item-icon">
+						<use xlink:href="../img/header/sprite.svg#user"></use>
+					</svg>
+					<a href="#" class="menu__link">Войти</a>
+				</div>
+				<button type="submit" class="menu__icon icon-menu"><span></span></button>
 			</div>
 		</div>
 		<div class="header__content content">
 			<div class="content__title">
 				<h1 class="content__title-text">Доставка груза <br> для вашего бизнеса:</h1>
-				<span class="content__title-city"></span>
+				<span class="content__title-city">Германия</span>
 				<span class="content__title-cursor">|</span>
 			</div>
 			<div class="content__form">
 				<div class="content__form-block">
 					<form class="content__form-form" method="get" action="#">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Откуда"
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Откуда "
 							class="content__form-input input">
-						<div class="content__form-icon">
-							<svg class="content__form-icon-item">
+						<div class="content__form-img">
+							<svg class="content__form-img-icon">
 								<use xlink:href="../img/header/sprite.svg#geo"></use>
 							</svg>
 						</div>
@@ -88,15 +89,15 @@
 					<form class="content__form-form" method="get" action="#">
 						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Куда"
 							class="content__form-input input">
-						<div class="content__form-icon">
-							<svg class="content__form-icon-item">
+						<div class="content__form-img">
+							<svg class="content__form-img-icon">
 								<use xlink:href="../img/header/sprite.svg#geo"></use>
 							</svg>
 						</div>
 					</form>
 				</div>
 				<div class="content__form-button">
-					<button class="content__form-button-action" type="submit" value="Расчитать">Расчитать
+					<button class="content__form-button-action _btn-red" type="submit" value="Расчитать">Расчитать
 						стоимость</button>
 				</div>
 			</div>
@@ -114,7 +115,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -126,7 +127,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -138,7 +139,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -150,7 +151,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -162,7 +163,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -174,7 +175,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -186,7 +187,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -198,7 +199,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -210,7 +211,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -222,7 +223,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
@@ -234,7 +235,7 @@
 						<p class="slider__items-distance-number">20 т, 86 м. куб</p>
 					</div>
 					<div class="slider__items-city">
-						<p class="pslider__items-city-name">Стамбул — Ташкент</p>
+						<p class="slider__items-city-name">Стамбул — Ташкент</p>
 					</div>
 					<span class="slider__items-label"></span>
 				</div>
