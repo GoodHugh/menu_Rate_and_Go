@@ -18,28 +18,11 @@
 			background-color: rgba(3, 15, 45, 0.35);
 		}
 	}
-	// .header__container
-	&__container {
-	}
-	// .header__info
-	&__info {
-	}
 	// .header__body
 	&__body {
 		display: flex;
 	}
-	// .header__body-logo
-	&__body-logo {
-	}
-	// .header__menu
-	&__menu {
-	}
-	// .header__content
-	&__content {
-	}
-	// .header__slider
-	&__slider {
-	}
+
 }
 .info {
 	// .info__list
@@ -122,11 +105,7 @@
 		top: 0;
 		left: 0;
 	}
-	// .logo__title
-	&__title {
-	}
 	%settings_font_logo {
-		font-family: Montserrat;
 		font-style: normal;
 		font-weight: bold;
 		color: #cb454d;
@@ -148,9 +127,6 @@
 	align-items: center;
 	flex: 1 1 auto;
 	justify-content: end;
-	// .menu__body
-	&__body {
-	}
 	// .menu__list
 	&__list {
 		display: flex;
@@ -164,10 +140,8 @@
 	}
 	// .menu__link
 	&__link {
-		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 14px;
 		color: #ffffff;
 		padding: 25px 12.5px;
 		transition: all 0.5s ease;
@@ -216,9 +190,6 @@
 		width: 20px;
 		height: 20px;
 	}
-	// .menu__icon
-	&__icon {
-	}
 }
 
 .content {
@@ -248,9 +219,7 @@
 	// .content__form
 	&__form {
 		display: flex;
-	}
-	// .content__form-block
-	&__form-block {
+		margin-bottom: 40px;
 	}
 	// .content__form-form
 	&__form-form {
@@ -259,10 +228,8 @@
 	}
 	// .content__form-input
 	&__form-input {
-		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 14px;
 		color: rgba(17, 25, 46, 0.5);
 		padding: 15px 0 15px 40px;
 		margin-right: 20px;
@@ -271,7 +238,7 @@
 		min-width: 280px;
 		border: 1px solid #f1f5ff;
 		transition: all 0.7s ease;
-		&:focus{
+		&:focus {
 			transition: all 0.7s ease;
 			background: #ffffff;
 			color: rgb(17, 25, 46);
@@ -296,55 +263,111 @@
 	&__form-button {
 		min-width: 280px;
 	}
-	// .content__form-button-action
-	&__form-button-action {
-	}
 	// .content__text
 	&__text {
-	}
-	// .content__text-paragraph
-	&__text-paragraph {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		color: #ffffff;
+		margin-bottom: rem(112);
 	}
 }
+
 .slider {
-	// .slider__block
-	&__block {
+	border-top: 1px solid #ffffff;
+	position: relative;
+	// .slider__container
+	&__container {
+		display: flex;
+		overflow: hidden;
 	}
 	// .slider__item
 	&__item {
+		padding: 40px 0 40px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 0 25%;
+		min-height: 185px;
+		position: relative;
+		color: #B3B5BB
 	}
 	// .slider__item-price
 	&__item-price {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		//color: #ffffff;
 	}
-	// .slider__item-price-number
-	&__item-price-number {
+	// .slider__item-distance
+	&__item-distance {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
 	}
-	// .slider__items-distance
-	&__items-distance {
+	// .slider__item-city
+	&__item-city {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		padding: 10px 0;
 	}
-	// .slider__items-distance-number
-	&__items-distance-number {
-	}
-	// .slider__items-city
-	&__items-city {
-	}
-	// .slider__items-city-name
-	&__items-city-name {
-	}
-	// .slider__items-label
-	&__items-label {
+	// .slider__item-label
+	&__item-label {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 24px;
+		height: 24px;
+		background-color: #a1464c;
+		border-radius: 50%;
+		border: 9px solid #ffffff;
 	}
 	// .slider__block-car
 	&__block-car {
+		position: absolute;
+		width: 89px;
+		height: 22px;
+		bottom: 88px;
+		left: 0;
+		background-image: url(../img/header/truck.png);
 	}
-	// .slider__block-car-icon
-	&__block-car-icon {
+	// .slider__line-bottom
+	&__line-bottom {
+		display: block;
+		margin-top: -12px;
+		z-index: -1;
+		width: 100%;
+		height: 1px;
+		background-image: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0) 40%);
+		background-size: 20px 1px;
+		background-repeat: repeat-x;
 	}
-	// .slider__block-button
-	&__block-button {
+}
+
+.slider-button {
+	// .slider-button__container
+	&__container {
+		padding: 40px 0;
+		display: flex;
+		align-items: center;
 	}
-	// .slider__block-button-action
-	&__block-button-action {
+	// .slider-button__button-action
+	&__button-action {
+		font-style: normal;
+		font-weight: 600;
+		color: #ffffff;
+		margin-right: 10px;
+		&:hover {
+			transition: all 0.5s ease;
+			color: #cb454d;
+		}
+	}
+	// .slider-button__button-icon
+	&__button-icon {
+		fill: #ffffff;
+		width: 20px;
+		height: 12px;
 	}
 }
 
