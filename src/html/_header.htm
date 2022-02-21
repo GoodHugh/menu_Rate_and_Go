@@ -28,8 +28,8 @@
 					<svg class="info__list-items-icon-planet">
 						<use xlink:href="../img/header/sprite.svg#planet"></use>
 					</svg>
-					<button class="info__list-items-button">RU</button>
-					<ul class="drope-menu">
+					<button id="button-info__list-items" class="info__list-items-button">RU</button>
+					<ul id="menu-drope" class="drope-menu">
 						<li class="drope-menu__items"><a href="#" class="drope-menu__items-link">RU</a></li>
 						<li class="drope-menu__items"><a href="#" class="drope-menu__items-link">EN</a></li>
 						<li class="drope-menu__items"><a href="#" class="drope-menu__items-link">UA</a></li>
@@ -64,7 +64,11 @@
 					</svg>
 					<a href="#" class="menu__link">Войти</a>
 				</div>
-				<button type="submit" class="menu__icon icon-menu"><span></span></button>
+				<button type="submit" class="menu__icon icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</div>
 		</div>
 		<div class="header__content content">
@@ -106,65 +110,67 @@
 	</div>
 	<div class="header__slider slider">
 		<div class="slider__container">
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
-			</div>
-			<div class="slider__item">
-				<p class="slider__item-price">7. 000 €</p>
-				<p class="slider__item-distance">20 т, 86 м. куб</p>
-				<p class="slider__item-city">Стамбул — Ташкент</p>
-				<span class="slider__item-label"></span>
+			<div class="slider__body">
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
+				<div class="slider__item">
+					<p class="slider__item-price">7. 000 €</p>
+					<p class="slider__item-distance">20 т, 86 м. куб</p>
+					<p class="slider__item-city">Стамбул — Ташкент</p>
+					<span class="slider__item-label"></span>
+				</div>
 			</div>
 		</div>
 		<div class="slider__block-car">

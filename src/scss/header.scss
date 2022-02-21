@@ -22,8 +22,8 @@
 	&__body {
 		display: flex;
 	}
-
 }
+
 .info {
 	// .info__list
 	&__list {
@@ -34,6 +34,7 @@
 	}
 	// .info__list-items
 	&__list-items {
+		position: relative;
 		display: flex;
 		align-items: center;
 		margin: 0 28px 0 0;
@@ -50,6 +51,11 @@
 				border: 4px solid transparent;
 				border-top: 4px solid #ffffff;
 			}
+		}
+	}
+	.info__list-items-active {
+		&::after {
+			transform: rotate(180deg);
 		}
 	}
 	// .info__list-items-icon
@@ -76,17 +82,42 @@
 		@extend %settings_font_info;
 		font-size: 14px;
 		padding: 0 8px;
+		&:hover {
+			transition: all 0.5s ease;
+			color: #cb454d;
+		}
 	}
 }
 
 .drope-menu {
-	display: none;
+	background-color: #ffffff;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 36px;
+	color: #000000;
+	opacity: 0;
+	transition: all 0.7s ease;
+	z-index: -1;
 	// .drope-menu__items
 	&__items {
+		padding: 5px 0 5px 0;
+		transition: all 0.7s ease;
+		&:hover {
+			color: $mainColor;
+			background-color: #cb454d;
+			transition: all 0.7s ease;
+		}
 	}
 	// .drope-menu__items-link
 	&__items-link {
 	}
+}
+.drope-menu-active {
+	top: 100%;
+	opacity: 1;
+	z-index: 5;
+	transition: all 0.7s ease;
 }
 
 .logo {
@@ -127,6 +158,7 @@
 	align-items: center;
 	flex: 1 1 auto;
 	justify-content: end;
+	position: relative;
 	// .menu__list
 	&__list {
 		display: flex;
@@ -278,8 +310,14 @@
 	position: relative;
 	// .slider__container
 	&__container {
-		display: flex;
 		overflow: hidden;
+	}
+	// .slider__body
+	&__body {
+		display: flex;
+		position: relative;
+		right: 0;
+		transition: all 1s ease;
 	}
 	// .slider__item
 	&__item {
@@ -290,7 +328,8 @@
 		flex: 1 0 25%;
 		min-height: 185px;
 		position: relative;
-		color: #B3B5BB
+		color: #b3b5bb;
+		right: 0;
 	}
 	// .slider__item-price
 	&__item-price {
@@ -331,6 +370,8 @@
 		bottom: 88px;
 		left: 0;
 		background-image: url(../img/header/truck.png);
+		transition: all 1s ease;
+		opacity: 0;
 	}
 	// .slider__line-bottom
 	&__line-bottom {
@@ -343,6 +384,18 @@
 		background-size: 20px 1px;
 		background-repeat: repeat-x;
 	}
+}
+
+.slider_item_active {
+	color: $mainColor;
+}
+.slider_item-label_active {
+	background-color: #ffffff;
+	border: 9px solid #a1464c;
+}
+.slider_block_car_active {
+	transition: all 1s ease;
+	opacity: 1;
 }
 
 .slider-button {
@@ -374,11 +427,9 @@
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
+	@media (max-width: $tablet) {
 		position: relative;
 		width: rem(30);
 		height: rem(18);
@@ -393,7 +444,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: #cb454d;
 		}
 		&::before {
 			top: 0;
@@ -422,4 +473,3 @@
 		}
 	}
 }
-*/
