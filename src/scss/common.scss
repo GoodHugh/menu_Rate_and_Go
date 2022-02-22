@@ -8,7 +8,7 @@
 %setings_font_title {
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    @include adaptiveValue ('font-size', 40, 32);
 }
 ._btn-red{
     width: 100%;
