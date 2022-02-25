@@ -23,7 +23,6 @@
 		display: flex;
 	}
 }
-
 .info {
 	// .info__list
 	&__list {
@@ -249,9 +248,9 @@
 		display: flex;
 		align-items: center;
 		@media (max-width: $mobile) {
-			position: fixed;
-			top: 120px;
-			right: 0;
+			position: absolute;
+			top: 65px;
+			right: -15px;
 		}
 	}
 	// .menu__item-icon
